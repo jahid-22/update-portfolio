@@ -1,0 +1,93 @@
+/* ====== break poins=====
+1/ For Mobile devices: (min-width:320px) and (max-width:480px)
+2/ For Tablets or iPad: (min-width:480px) and (max-width:768px)
+3/ For Laptop or small-size screen: 768px -992px
+4/ For Desktop or large-size screen: 992px -1200px
+5/ For Extra-large size device: 1200px and more
+*/
+@media only screen and (min-width:320px) and (max-width:480px){   
+    /* navbar */
+    .navbar{
+        background-color:var(--secondery--text) !important;
+    }
+    .navbar button span i{
+        color: whitesmoke;
+    }
+    .navbar ul{
+        margin: 0 auto;
+        width: 50%;
+    }
+    /* hero section */
+    .home-content-1{
+        height: 14rem;
+    }
+    .home-content-1 img{
+        width: 35%;
+    }
+    /* service ==>> skills section */
+    .services .skills .progress .space h6{
+        font-size: 13px;
+    }
+    /*portfolio  */
+    .portfolio .line-box{
+        transform: translateX(-215px);
+        -webkit-transform: translateX(-215px);
+        -moz-transform: translateX(-215px);
+        -ms-transform: translateX(-215px);
+        -o-transform: translateX(-215px);
+    }
+    .portfolio .port-card .hidden-txt p{
+        font-size: 14px;
+        margin-bottom: .1rem ;
+    }
+    .portfolio .port-card .hidden-txt .main-btn{
+        font-size: 14px;
+        padding: 0.2rem .5rem;
+        text-align: center;
+        margin: 0;
+    }
+    /* about */
+    .about .ab-card{
+        display: flex;
+        flex-direction: column;
+    }
+    .about .ab-card img{
+        margin-bottom: 1rem;
+    }
+    /* footer */
+    footer .container .address::after {
+        content: "";
+        width: 0.3rem;
+        height: 8.5rem;
+        background: var(--primary-color);
+        position: absolute;
+        top: 5px;
+        left: 0;
+      }
+}
+@media only screen and (min-width:480px) and (max-width:768px){
+    /* portfolio */
+    .portfolio .port-card .hidden-txt{
+        font-size: 17px;
+        width: unset;
+        vertical-align: middle;
+        padding: unset;
+        margin: 0 auto;
+        right: 2.5rem;
+    }
+    .portfolio .port-card .hidden-txt h5{
+        font-size: 15px;
+        text-align: center;
+    }
+    .portfolio .port-card .hidden-txt p{
+        font-size: 14px;
+        margin-bottom: .1rem ;
+    }
+    .portfolio .port-card .hidden-txt h5{
+        text-align: center;
+        font-size: 15px;
+    }
+}
+@media only screen and (max-width:768px) and (min-width:992px){
+
+}
