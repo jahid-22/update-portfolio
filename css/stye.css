@@ -10,12 +10,13 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-color: #222222;
+    /* background-color: #222222; */
+    background-color: black;
 }
 :root{
     --primary-color:whitesmoke;
     --primary-text:gray;
-    --secondery--text:#F26C4F;
+    --secondery--text:#ec3209;
 }
 span{
     color: var(--secondery--text);
@@ -109,10 +110,12 @@ h1, h2, h3, h4, h5, h6{
 .padding{
     padding: .2rem .5rem;
 }
-/* nav bar */
 
+
+/* nav bar */
 .navbar .navbar-brand img{
-    width: 12rem;
+    width: 10rem;
+    border: 1px solid;
 }
 header nav{
     padding: .6rem 2rem;
@@ -243,6 +246,11 @@ button.slide-left{
 }
 .contact .row i:hover{
     color: var(--secondery--text);
+    transform: translateY(-5px);
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
 }
 .contact .row .line-box .line{
     width: 4.8rem;
@@ -315,38 +323,43 @@ button.slide-left{
     height: 1.5rem;
 }
 .services .skills .progress .space{
-    width: 20%;
+    width: 30%;
+    min-width: 20%;
 }
 .services .skills .progress h6{
     color: var(--primary-text);
     margin-right: 1rem;
 }
-.services .skills .progress p{
-    font-size: .9rem;
-    margin-left: .4rem;
-    text-align: center;
-    line-height: 13px;
-    color: #F26C4F;
-}
 .services .skills .progress .progress-bar{
-    width: 100%;
-    height: .9rem !important;
-    background: #e2e2e2;
-    border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
-    position: relative;
+    background-color: gray;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 1.2rem;
+  width: 300px;
+    
 }
 .services .skills .progress .progress-bar .progressing{
-    width: 15rem;
-    height: 100%;
-    background: #F26C4F !important;
-    border-radius: 30px;
-    position: absolute;
-    top: 0;
-    left: 0;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  height: 1.2rem;
+  width: 0px;
+  opacity: 0;
+  background-color: var(--secondery--text);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 3px 3px -3px rgb(85, 70, 43), 0px 3px 3px -3px rgb(65, 54, 55) ;
+  transition: 2s ease .3s;
+  -webkit-transition: 2s ease .3s;
+  -moz-transition: 2s ease .3s;
+  -ms-transition: 2s ease .3s;
+  -o-transition: 2s ease .3s;
 }
 /* portfolio section */
 .portfolio {
